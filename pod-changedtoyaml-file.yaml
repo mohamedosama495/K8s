@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: pod-changedtoyaml-file
+  name: pod-changedtoyaml-file
+spec:
+  containers:
+  - image: nginx
+    name: pod-changedtoyaml-file
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
